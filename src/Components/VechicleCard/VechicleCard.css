@@ -1,0 +1,6 @@
+@media only screen and (max-width:768px) {
+    .card-details {
+        margin-top: 20px;
+        margin-left: 40px!important;
+    }
+}

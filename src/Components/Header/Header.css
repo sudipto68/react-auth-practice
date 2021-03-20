@@ -1,0 +1,15 @@
+.link{
+    Color: black;
+    padding:10px;
+    font-weight: 500;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+.link:hover{
+    color:orangered;
+    border-bottom: 1px solid orangered;
+}
+.brand-name{
+    font-weight: 700;
+    font-size:1.7rem;
+}

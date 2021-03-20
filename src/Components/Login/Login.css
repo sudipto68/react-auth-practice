@@ -1,0 +1,12 @@
+.btn{
+    border:none !important;
+    background-color:orangered;
+    width:200px;
+}
+
+.mail{
+    max-width:400px;
+}
+.pass{
+    max-width:400px;
+}

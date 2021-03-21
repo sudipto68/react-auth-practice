@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import "./VechicleCard.css";
 
 const VechicleCard = (props) => {
-  const { name, image } = props.element;
+  const { name, image, id } = props.element;
   return (
     <div>
-      <Link to="/destination">
+      <Link to={"destination/" + id}>
         <Card
           className="d-flex justify-content-center align-items-center p-4 card-details"
           style={{ width: "14rem", marginLeft: "40px" }}

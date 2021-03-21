@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../App";
 import "./Header.css";
 
 const Header = () => {
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   return (
     <div>
       <Container>
@@ -24,19 +26,31 @@ const Header = () => {
               <Link to="#link" className="link">
                 Contact
               </Link>
-              <Link to="/login">
-                <Button
+              {loggedInUser.name ? (
+                <div
                   style={{
-                    backgroundColor: "orangered",
-                    border: "none",
-                    width: "80px",
-                    height: "40px",
-                    marginLeft: "20px",
+                    marginTop: "10px",
+                    fontWeight: "bold",
+                    marginLeft: "10px",
                   }}
                 >
-                  Login
-                </Button>
-              </Link>
+                  {loggedInUser.name.toUpperCase()}
+                </div>
+              ) : (
+                <Link to="/login">
+                  <Button
+                    style={{
+                      backgroundColor: "orangered",
+                      border: "none",
+                      width: "80px",
+                      height: "40px",
+                      marginLeft: "20px",
+                    }}
+                  >
+                    Login
+                  </Button>
+                </Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

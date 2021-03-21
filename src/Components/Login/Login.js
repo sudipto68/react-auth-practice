@@ -44,14 +44,15 @@ const Login = () => {
           <Button type="submit" className="btn mb-4">
             Login
           </Button>
-          <br />
-          <span>Don't have an account?</span>
-          <Link to="/registration">
-            <span style={{ color: "orangered" }}> Create a new account</span>
-          </Link>
-          <br />
         </Form>
       </Container>
+      <div style={{ textAlign: "center" }}>
+        <span>Don't have an account?</span>
+        <Link to="/registration">
+          <span style={{ color: "orangered" }}> Create a new account</span>
+        </Link>
+        <br />
+      </div>
       <GoogleSignIn />
     </div>
   );

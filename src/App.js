@@ -9,6 +9,7 @@ import Registration from "./Components/Registration/Registration";
 import { createContext, useState } from "react";
 import Destination from "./Components/Destination/Destination";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import SearchResult from "./Components/SearchResult/SearchResult";
 
 export const UserContext = createContext();
 
@@ -33,9 +34,12 @@ function App() {
             <Route path="/registration">
               <Registration />
             </Route>
-            <PrivateRoute path="/destination">
+            <PrivateRoute path="/destination/:vechicleId">
               <Destination />
             </PrivateRoute>
+            <Route path="/search">
+              <SearchResult />
+            </Route>
             <Route path="*">
               <ErrorPage />
             </Route>

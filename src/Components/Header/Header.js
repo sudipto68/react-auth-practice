@@ -17,7 +17,7 @@ const Header = () => {
               <Link to="/home" className="link">
                 Home
               </Link>
-              <Link to="#link" className="link">
+              <Link to="/login" className="link">
                 Destination
               </Link>
               <Link to="#link" className="link">

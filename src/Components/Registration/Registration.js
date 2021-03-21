@@ -5,6 +5,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import GoogleSignIn from "../GoogleSignIn/GoogleSignIn";
 import firebaseConfig from "../../firebase.config";
+import FacebookSignIn from "../FacebookSignIn/FacebookSignIn";
 
 const Registration = () => {
   const [user, setUser] = useState({
@@ -106,6 +107,7 @@ const Registration = () => {
         </Link>
       </div>
       <GoogleSignIn />
+      <FacebookSignIn />
     </div>
   );
 };

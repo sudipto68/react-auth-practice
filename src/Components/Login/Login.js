@@ -3,6 +3,7 @@ import "./Login.css";
 import { Form, Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import GoogleSignIn from "../GoogleSignIn/GoogleSignIn";
+import FacebookSignIn from "../FacebookSignIn/FacebookSignIn";
 
 const Login = () => {
   return (
@@ -54,6 +55,7 @@ const Login = () => {
         <br />
       </div>
       <GoogleSignIn />
+      <FacebookSignIn />
     </div>
   );
 };
